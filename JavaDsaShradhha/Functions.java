@@ -9,7 +9,6 @@ public class Functions {
             char c = sc.next().charAt(0);
             switchcase(c);
             AreaOfTriangle(10, 8, 9);
-            Armstrong(153);
             CountNumberWord(1700);
             fibonacchiNumber(10);
             System.out.println(VargArg());
@@ -180,28 +179,6 @@ public class Functions {
         System.out.println("Roots are " + r1 + " " + r2);
     }
 
-    // Armstrong number
-    /*
-     * Input: 1634
-     * Output: Yes
-     * 1*1*1*1 + 6*6*6*6 + 3*3*3*3 + 4*4*4*4 = 1634
-     */
-    public static void Armstrong(int n) {
-        int v = n;
-        int p = (int)Math.log10(n)+1;
-        int remainder;
-        int result = 0;
-        while (n != 0) {
-            remainder = n % 10;
-            result += (int) Math.pow(remainder, p);
-            n /= 10;
-        }
-
-        if (result == v)
-            System.out.println(v + " is an Armstrong number.");
-        else
-            System.out.println(v + " is not an Armstrong number.");
-    }
 
     // count number to word=>170=>one seven zero
     public static void CountNumberWord(int n) {
@@ -229,7 +206,7 @@ public class Functions {
                 case '7' -> System.out.print("Seven ");
                 case '8' -> System.out.print("Eight ");
                 case '9' -> System.out.print("Nine ");
-
+                default ->System.out.println("hjvfdbg");
             }
 
         }

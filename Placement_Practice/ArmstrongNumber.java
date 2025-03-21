@@ -9,10 +9,17 @@ public class ArmstrongNumber {
         }
     }
 
+
+    /*
+     * Input: 1634
+     * Output: Yes
+     * 1*1*1*1 + 6*6*6*6 + 3*3*3*3 + 4*4*4*4 = 1634
+    */
+
     public static boolean isArmstrong(int number) {
         int originalNumber = number;
         int sum = 0;
-        int numberOfDigits = String.valueOf(number).length();
+        int numberOfDigits = String.valueOf(number).length();  //int p = (int)Math.log10(n)+1;
 
         while (number > 0) {
             int digit = number % 10;

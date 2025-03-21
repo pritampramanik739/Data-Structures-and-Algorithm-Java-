@@ -16,7 +16,7 @@ public class Testcase {
          * A array is given if the array value is greater than it's all right values
          * then the number is called superior element count the superior elements....
          * 
-         */
+        */
         int n = Integer.MIN_VALUE;
         int count = 0;
         for (int i = arr.length - 1; i >= 0; i--) {
@@ -88,6 +88,7 @@ public class Testcase {
          */
         System.out.println(((n*(3*n+1))/2));
     }
+    
     public static void Bulb(int n){
         /*
          * there is n bulb after each level alternative on and off after n level how many bulb is on

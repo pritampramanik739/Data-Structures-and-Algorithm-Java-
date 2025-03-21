@@ -82,7 +82,7 @@ public class DivideConquer {
 
     // quicksort ending-------->>>
 
-    // search ina sorted and rotated array-----> Recursive approch
+    // search in a sorted and rotated array-----> Recursive approch
     public static int rotated(int arr[], int key, int si, int ei) {
         if (si > ei) {
             return -1;

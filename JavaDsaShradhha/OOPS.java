@@ -1,4 +1,3 @@
-
 public class OOPS {
     public static void main(String[] args) {
         book b1 = new book();
@@ -182,6 +181,7 @@ abstract class bike {
     }
 
     // it is a abstract method---
+    @SuppressWarnings("unused")
     abstract void engine();
 }
 

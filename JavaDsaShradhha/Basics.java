@@ -1,4 +1,6 @@
+
 public class Basics {
+
     public static void main(String[] args) {
         int i = 15;
         // decimal to binary , hexadecimal ,octal
@@ -32,5 +34,8 @@ public class Basics {
         float f = 12.34f % 3.45f; // float value in reminder operator
         System.out.println("Float reminder value : " + f);
 
+        char chfg = 'B';
+        char lowerCh = Character.toLowerCase(chfg);
+        System.out.println(lowerCh); // Output: b
     }
 }
