@@ -14,8 +14,8 @@ This repository contains **Data Structures and Algorithms (DSA)** implementation
 ### 🔹 Algorithm Flowchart Example
 <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/Sorting_quicksort_anim.gif" width="400" alt="Quicksort Animation">
 
-### 🔹 Binary Tree Representation
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Perfect-binary-tree.svg/512px-Perfect-binary-tree.svg.png" width="400" alt="Binary Tree Representation">
+### 🔹 Reverse Linked List Visualization
+<img src="https://i0.wp.com/learnersbucket.com/wp-content/uploads/2019/08/reverse-linked-list.gif?fit=600%2C338&ssl=1" width="400" alt="Reverse Linked List Animation">
 
 ## 🔧 Installation & Usage
 
