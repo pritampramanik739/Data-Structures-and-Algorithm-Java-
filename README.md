@@ -12,10 +12,10 @@ This repository contains **Data Structures and Algorithms (DSA)** implementation
 
 ## 📸 Screenshots
 ### 🔹 Algorithm Flowchart Example
-<img src="https://upload.wikimedia.org/wikipedia/commons/c/c6/Quicksort-example.gif" width="400" alt="Quicksort Animation">
+<img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/Sorting_quicksort_anim.gif" width="400" alt="Quicksort Animation">
 
 ### 🔹 Binary Tree Representation
-<img src="https://upload.wikimedia.org/wikipedia/commons/5/5a/Sorted_binary_tree_ALL.svg" width="400" alt="Binary Tree">
+<img src="https://upload.wikimedia.org/wikipedia/commons/d/dc/Binary-tree-illustration.png" width="400" alt="Binary Tree Representation">
 
 ## 🔧 Installation & Usage
 
