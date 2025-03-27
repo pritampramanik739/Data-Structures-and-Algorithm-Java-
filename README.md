@@ -15,7 +15,7 @@ This repository contains **Data Structures and Algorithms (DSA)** implementation
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Sorting_quicksort_anim.gif/800px-Sorting_quicksort_anim.gif" width="400" alt="Quicksort Animation">
 
 ### 🔹 Binary Tree Representation
-<img src="https://upload.wikimedia.org/wikipedia/commons/f/f7/Binary_tree.svg" width="400" alt="Binary Tree">
+<img src="https://camo.githubusercontent.com/b504adf2b4595f30754a52b10bf3e90a64eb0ece750e82beaa68ec2de798a66a/68747470733a2f2f75706c6f61642e77696b696d656469612e6f72672f77696b6970656469612f636f6d6d6f6e732f662f66372f42696e6172795f747265652e737667" width="400" alt="Binary Tree">
 
 ## 🔧 Installation & Usage
 
