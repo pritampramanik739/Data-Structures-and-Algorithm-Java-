@@ -1,6 +1,6 @@
 # 🚀 Java DSA (Data Structures & Algorithms)
 
-<img src="https://upload.wikimedia.org/wikipedia/en/3/30/Java_programming_language_logo.svg" width="250" alt="Java Logo">
+<img src="https://upload.wikimedia.org/wikipedia/en/3/30/Java_programming_language_logo.svg" width="50" alt="Java Logo">
 
 ## 📌 Overview
 This repository contains **Data Structures and Algorithms (DSA)** implementations in **Java**. It is designed for beginners and experienced programmers looking to enhance their problem-solving skills.
