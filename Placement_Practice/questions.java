@@ -9,6 +9,7 @@ public class questions {
             str2 += Character.toUpperCase(str.charAt(i));
         }
         System.out.println(str2);
+        System.out.println(str.toUpperCase());
 
         isHappyNumber(10);
     }

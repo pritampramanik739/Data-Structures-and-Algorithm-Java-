@@ -1,7 +1,7 @@
 public class LargestNumberDivisibleBy90 {
 
     public static void main(String[] args) {
-        int[] arr = {0, 5,5,5,5,5,5,5,5,5}; // Example input
+        int[] arr = {0,5,5,5,5,5,5,5,5,5}; // Example input
         String d=findLargestNumber(arr);
         long lk=Long.parseLong(d);
         System.out.println(lk);

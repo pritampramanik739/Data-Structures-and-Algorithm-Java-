@@ -11,6 +11,7 @@ public class ArmstrongNumber {
 
 
     /*
+     * also known as narcissistic number
      * Input: 1634
      * Output: Yes
      * 1*1*1*1 + 6*6*6*6 + 3*3*3*3 + 4*4*4*4 = 1634

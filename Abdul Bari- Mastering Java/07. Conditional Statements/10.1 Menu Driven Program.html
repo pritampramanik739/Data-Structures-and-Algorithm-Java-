@@ -1,0 +1,1 @@
+<script type="text/javascript">window.location = "https://github.com/mohammedabdulbari/CoreJava/blob/master/SCSwitch2.java";</script>
