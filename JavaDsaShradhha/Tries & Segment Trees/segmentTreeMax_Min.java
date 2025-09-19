@@ -1,5 +1,6 @@
 
 public class segmentTreeMax_Min {
+
     static int tree[];
 
     public static void init(int n) {
@@ -47,21 +48,27 @@ public class segmentTreeMax_Min {
 
     public static void updateutil(int i, int si, int sj, int idx, int newv) {
         if (idx < si || idx > sj) {
+            return; // no overlap
+        }
+
+        if (si == sj) {
+            tree[i] = newv; // leaf update
             return;
         }
-        if(si==sj){
-            tree[i]=newv;
+
+        int mid = (si + sj) / 2;
+        if (idx <= mid) {
+            updateutil(2 * i + 1, si, mid, idx, newv);
+        } else {
+            updateutil(2 * i + 2, mid + 1, sj, idx, newv);
         }
-        if (si != sj) {
-            tree[i] = Math.max(tree[i], newv);
-            int mid = (si + sj) / 2;
-            updateutil(2 * i + 1, si, mid, idx, newv); // left
-            updateutil(2 * i + 2, mid + 1, sj, idx, newv);// right
-        }
+
+        // ✅ recompute from children
+        tree[i] = Math.max(tree[2 * i + 1], tree[2 * i + 2]);
     }
 
     public static void main(String[] args) {
-        int arr[] = { 6, 8, -1, 2, 17, 1, 3, 2, 4 };
+        int arr[] = {6, 8, -1, 2, 17, 1, 3, 2, 4};
         int n = arr.length;
         init(n);
         buildtree(0, 0, n - 1, arr);
