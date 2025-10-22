@@ -1,13 +1,18 @@
 import java.util.*;
 
 public class QueuePractice {
+
     @SuppressWarnings("static-access")
     public static void main(String[] args) {
-        stack_queue q1=new stack_queue();
+        stack_queue q1 = new stack_queue();
         q1.add(10);
+        StreamOfLetter("abadbc");
+        firstNonRepeatingChar("abadbc");
     }
+
     //queue implement by  array----.>
     public static class queueA {
+
         static int arr[];
         static int size;
         static int rear;
@@ -24,7 +29,7 @@ public class QueuePractice {
 
         public static void add(int data) {
             if (rear == size - 1) {
-                System.out.println("wueue is full");
+                System.out.println("queue is full");
                 return;
             }
             rear = rear + 1;
@@ -52,8 +57,10 @@ public class QueuePractice {
             return arr[0];
         }
     }
+
     // change queue in circular queue using array
     public static class circular_queueA {
+
         static int arr[];
         static int size;
         static int rear;
@@ -107,8 +114,10 @@ public class QueuePractice {
             return result;
         }
     }
+
     // queue implement using LinkedList
     public static class node {
+
         int data;
         node next;
 
@@ -119,6 +128,7 @@ public class QueuePractice {
     }
 
     public static class queuell {
+
         static node head = null;
         static node tail = null;
 
@@ -156,8 +166,10 @@ public class QueuePractice {
             return head.data;
         }
     }
+
     //create queue using Stack----.>
     public static class stack_queue {
+
         static Stack<Integer> s1 = new Stack<>();
         static Stack<Integer> s2 = new Stack<>();
 
@@ -179,16 +191,17 @@ public class QueuePractice {
             if (isempty()) {
                 return -1;
             }
-           return s1.pop();
+            return s1.pop();
         }
 
         public static int peek() {
             if (isempty()) {
                 return -1;
             }
-          return  s1.peek();
+            return s1.peek();
         }
     }
+
     //queue reversal
     public static void reversal(Queue<Integer> q) {
         Stack<Integer> s = new Stack<>();
@@ -199,6 +212,7 @@ public class QueuePractice {
             q.add(s.pop());
         }
     }
+
     //Interleave the queue element
     public static void interleave(Queue<Integer> q) {
         Queue<Integer> m = new LinkedList<>();
@@ -212,6 +226,7 @@ public class QueuePractice {
             q.add(q.remove());
         }
     }
+
     //First non repeating letter from the stream...
     public static void StreamOfLetter(String str) {
         Queue<Character> q = new LinkedList<>();
@@ -233,6 +248,25 @@ public class QueuePractice {
         }
         System.out.println();
     }
-    
-}
 
+    public static char firstNonRepeatingChar(String str) {
+        int freq[] = new int[26];
+
+        // Count frequencies
+        for (int i = 0; i < str.length(); i++) {
+            char c = str.charAt(i);
+            freq[c - 'a']++;
+        }
+
+        // Find first non-repeating character
+        for (int i = 0; i < str.length(); i++) {
+            char c = str.charAt(i);
+            if (freq[c - 'a'] == 1) {
+                return c;  // return immediately
+            }
+        }
+
+        return '#'; // if no non-repeating char exists
+    }
+
+}

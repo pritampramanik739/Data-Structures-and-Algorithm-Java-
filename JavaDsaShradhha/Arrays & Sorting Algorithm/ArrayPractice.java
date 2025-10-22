@@ -82,6 +82,19 @@ public class ArrayPractice{
         }
     }
 
+    //subarray sum brute force approach
+    public static void subarraysum(int arr[]) {
+        int maxsum = Integer.MIN_VALUE;
+        for (int i = 0; i < arr.length; i++) {
+            int sum = 0;
+            for (int j = i; j < arr.length; j++) {
+                sum += arr[j];
+                maxsum = Math.max(maxsum, sum);
+            }
+        }
+        System.out.print(maxsum);
+    }
+
     // Prefix Sum Of maximum subarray sum
     public static void prefix_sum(int arr[]) {
         int prefix[] = new int[arr.length];
