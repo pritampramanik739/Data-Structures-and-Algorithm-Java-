@@ -112,13 +112,12 @@ class RottingOrangesSolution {
             time = Math.max(time, t);
             
             // Check all 4 directions
-            for (int i = 0; i < dirs.length; i++) {
-                int nr = r + dirs[i][0];
-                int nc = c + dirs[i][1];
-                
+            for (int[] dir : dirs) {
+                int nr = r + dir[0];
+                int nc = c + dir[1];
                 // If valid cell with fresh orange, make it rotten
-                if (nr >= 0 && nr < n && nc >= 0 && nc < m && 
-                    !vis[nr][nc] && mat[nr][nc] == 1) {
+                if (nr >= 0 && nr < n && nc >= 0 && nc < m &&
+                        !vis[nr][nc] && mat[nr][nc] == 1) {
                     q.offer(new Pair(nr, nc, t + 1));
                     vis[nr][nc] = true;
                     cf++; // Increment count of rotted oranges
